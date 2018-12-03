@@ -1,0 +1,26 @@
+@import "_mixins/icon";
+
+@include icon("arrow-left", false, 80px, 37px);
+@include icon("diy");
+@include icon("innovation");
+@include icon("medal", ".category-item");
+@include icon("intelligence");
+@include icon("pc");
+@include icon("translation");
+@include icon("music");
+@include icon("play", false, 17px, 23px);
+@include icon("star", false, 21px, 21px);
+
+.icons{
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+    &:after{
+        content: ' ';
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}

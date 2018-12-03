@@ -1,0 +1,62 @@
+@import "fonts";
+@import "vars";
+@import "icons";
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+}
+body{
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	font-family: $default-font;
+	a{
+		color: inherit;
+		outline: none;
+		text-decoration: none;
+		&:hover, &:active, &:visited{
+			color: inherit;
+			outline: none;
+			text-decoration: none;
+        }
+	}
+}
+.btn{
+	height: 50px;
+	border-radius: 25px;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 23px;
+	padding-right: 23px;
+	font-family: Ropa Sans;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 18px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	span{
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1px;
+    }
+	&.circle{
+		width: 50px;
+        padding: 0;
+    }
+	&.btn-white{
+        background-color: #fff;
+    }
+}
+
+@import "media";
+

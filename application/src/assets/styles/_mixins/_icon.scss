@@ -1,0 +1,14 @@
+@mixin icon($img-name,$hover-selector: false, $width: 35px, $height: 35px, $format: "svg"){
+	.icon-#{$img-name}:after{
+		background-image: url("~/img/icons/#{$img-name}.#{$format}");
+		width: $width;
+		height: $height;
+	}
+	@if $hover-selector != false {
+		#{$hover-selector}:hover, #{$hover-selector}.active{
+			.icon-#{$img-name}:after{
+				background-image: url("~/img/icons/#{$img-name}-active.#{$format}");
+			}
+		}
+	}
+}

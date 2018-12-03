@@ -1,0 +1,5 @@
+@import "_mixins/font-face";
+
+@include font-face("Oswald", "~/fonts/OswaldRegular/OswaldRegular", normal, normal);
+
+@include font-face("Ropa Sans", "~/fonts/RopaSansRegular/RopaSansRegular", normal, normal);
