@@ -1,6 +1,6 @@
 var MongoClient = require('mongodb').MongoClient;
 
-var client = new MongoClient('mongodb://localhost:27017',{ useNewUrlParser: true });
+var client = new MongoClient('mongodb://podcast:01021994ab@ds129560.mlab.com:29560/podcasts',{ useNewUrlParser: true });
 
 var state = {
 	db:null
