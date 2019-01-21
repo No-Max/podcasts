@@ -62,10 +62,7 @@
 
 <script>
 export default {
-  name: 'CategoryList',
-  props: {
-    msg: String
-  }
+  name: 'CategoryList'
 }
 </script>
 <style lang="scss">

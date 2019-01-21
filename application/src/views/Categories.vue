@@ -76,14 +76,16 @@
       grid-template-rows: 25% 8.2% 3.2% 12.4% 1.2% 25% 7.9% 17.1%;
       .all-item{
         padding: 5px;
-        transition: padding 0.2s;
         img{
           width: 100%;
           height: 100%;
           border-radius: 4px;
+          transition: 0.2s;
         }
         &:hover{
-          padding: 15px;
+          img{
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+          }
         }
       }
       .all-item:nth-child(1){

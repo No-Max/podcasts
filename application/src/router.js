@@ -15,6 +15,11 @@ export default new Router({
       path: '/categories',
       name: 'categories',
       component: () => import('./views/Categories.vue')
+    },
+    {
+      path: '/create-podcast',
+      name: 'CreatePodacast',
+      component: () => import('./views/CreatePodcast.vue')
     }
   ]
 })
